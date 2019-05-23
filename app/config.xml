@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Greater Anglia Faults</name>
+    <description>Greater Anglia fault reporting app.</description>
+    <author>Paulo Jorge</author>
+    <email>mfjpaulo@gmail.com</email>
+    <content src="index.html" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14" />
+    <platform name="android">
+        <icon density="hdpi" src="www/resources/android/icon/drawable-hdpi-icon.png" />        
+        <icon density="ldpi" src="www/resources/android/icon/drawable-ldpi-icon.png" />
+        <icon density="hdpi" src="www/resources/android/icon/drawable-hdpi-icon.png" />
+        <icon density="playstore-512" src="www/resources/android/icon/drawable-playstore-512-icon.png" />
+        <icon density="xhdpi" src="www/resources/android/icon/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/resources/android/icon/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/resources/android/icon/drawable-xxxhdpi-icon.png" />
+        <splash density="land-hdpi" src="www/resources/android/splash/drawable-land-hdpi-screen.png" />
+        <splash density="land-ldpi" src="www/resources/android/splash/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="www/resources/android/splash/drawable-land-mdpi-screen.png" />
+        <splash density="land-xhdpi" src="www/resources/android/splash/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="www/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="www/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-hdpi" src="www/resources/android/splash/drawable-port-hdpi-screen.png" />
+        <splash density="port-ldpi" src="www/resources/android/splash/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="www/resources/android/splash/drawable-port-mdpi-screen.png" />       <splash density="port-xhdpi" src="www/resources/android/splash/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="www/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="www/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+    </platform>    
+    <platform name="blackberry10">
+        <icon height="90" platform="blackberry10" src="www/resources/blackberry10/icon/icon-90.png" width="90" />
+        <icon height="96" platform="blackberry10" src="www/resources/blackberry10/icon/icon-96.png" width="96" />
+        <splash height="110" platform="blackberry10" src="www/resources/screen/wp8/icon-110.png" width="110" />
+        <splash height="144" platform="blackberry10" src="www/resources/screen/wp8/icon-144.png" width="144" />
+    </platform>
+    <platform name="ios">
+        <icon height="57" platform="ios" src="www/resources/ios/icon/icon.png" width="57" />
+        <icon height="114" platform="ios" src="www/resources/ios/icon/icon@2x.png" width="114" />
+        <icon height="40" platform="ios" src="www/resources/ios/icon/icon-40.png" width="40" />
+        <icon height="80" platform="ios" src="www/resources/ios/icon/icon-40@2x.png" width="80" />
+        <icon height="120" platform="ios" src="www/resources/ios/icon/icon-40@3x.png" width="120" />
+        <icon height="50" platform="ios" src="www/resources/ios/icon/icon-50.png" width="50" />
+        <icon height="100" platform="ios" src="www/resources/ios/icon/icon-50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="www/resources/ios/icon/icon-60.png" width="60" />
+        <icon height="120" platform="ios" src="www/resources/ios/icon/icon-60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="www/resources/ios/icon/icon-60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="www/resources/ios/icon/icon-72.png" width="72" />
+        <icon height="144" platform="ios" src="www/resources/ios/icon/icon-72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="www/resources/ios/icon/icon-76.png" width="76" />
+        <icon height="152" platform="ios" src="www/resources/ios/icon/icon-76@2x.png" width="152" />
+        <icon height="167" platform="ios" src="www/resources/ios/icon/icon-83.5@2x.png" width="167" />
+        <icon height="29" platform="ios" src="www/resources/ios/icon/icon-small.png" width="29" />
+        <icon height="58" platform="ios" src="www/resources/ios/icon/icon-small@2x.png" width="58" />
+        <icon height="87" platform="ios" src="www/resources/ios/icon/icon-small@3x.png" width="87" />
+        <splash height="960" platform="ios" src="www/resources/ios/splash/Default@2x~iphone.png" width="640" />
+        <splash height="480" platform="ios" src="www/resources/ios/splash/Default~iphone.png" width="320" />
+        <splash height="1136" platform="ios" src="www/resources/ios/splash/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" platform="ios" src="www/resources/ios/splash/Default-667h.png" width="750" />
+        <splash height="2208" platform="ios" src="www/resources/ios/splash/Default-736h.png" width="1242" />
+        <splash height="2048" platform="ios" src="www/resources/ios/splash/Default-Landscape@~ipadpro.png" width="2732" />
+        <splash height="1536" platform="ios" src="www/resources/ios/splash/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="768" platform="ios" src="www/resources/ios/splash/Default-Landscape~ipad.png" width="1024" />
+        <splash height="1242" platform="ios" src="www/resources/ios/splash/Default-Landscape-736h.png" width="2208" />
+        <splash height="2732" platform="ios" src="www/resources/ios/splash/Default-Landscape@~ipadpro.png" width="2048" />
+        <splash height="2048" platform="ios" src="www/resources/ios/splash/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="1024" platform="ios" src="www/resources/ios/splash/Default-Portrait~ipad.png" width="768" />
+    </platform>
+    <platform name="windows">
+        <icon height="44" platform="windows" src="www/resources/windows/icon/Square44x44Logo.scale-100.png" width="44" />
+        <icon height="55" platform="windows" src="www/resources/windows/icon/Square44x44Logo.scale-125.png" width="55" />
+        <icon height="66" platform="windows" src="www/resources/windows/icon/Square44x44Logo.scale-150.png" width="66" />
+        <icon height="88" platform="windows" src="www/resources/windows/icon/Square44x44Logo.scale-200.png" width="88" />        
+        <icon height="176" platform="windows" src="www/resources/windows/icon/Square44x44Logo.scale-400.png" width="176" />
+        <icon height="16" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-16.png" width="16" />
+        <icon height="20" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-20.png" width="20" />
+        <icon height="24" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-24.png" width="24" />
+        <icon height="30" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-30.png" width="30" />
+        <icon height="32" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-32.png" width="32" />
+        <icon height="36" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-36.png" width="36" />
+        <icon height="40" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-40.png" width="40" />
+        <icon height="48" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-48.png" width="48" />
+        <icon height="60" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-60.png" width="60" />
+        <icon height="64" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-64.png" width="64" />
+        <icon height="72" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-72.png" width="72" />
+        <icon height="80" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-80.png" width="80" />
+        <icon height="96" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-96.png" width="96" />
+        <icon height="256" platform="windows" src="www/resources/windows/icon/Square44x44Logo.targetsize-256.png" width="256" />
+        <icon height="71" platform="windows" src="www/resources/windows/icon/Square71x71Logo.scale-100.png" width="71" />
+        <icon height="89" platform="windows" src="www/resources/windows/icon/Square71x71Logo.scale-125.png" width="89" />
+        <icon height="107" platform="windows" src="www/resources/windows/icon/Square71x71Logo.scale-150.png" width="107" />
+        <icon height="142" platform="windows" src="www/resources/windows/icon/Square71x71Logo.scale-200.png" width="142" />
+        <icon height="284" platform="windows" src="www/resources/windows/icon/Square71x71Logo.scale-400.png" width="284" />
+        <icon height="150" platform="windows" src="www/resources/windows/icon/Square150x150Logo.scale-100.png" width="150" />
+        <icon height="188" platform="windows" src="www/resources/windows/icon/Square150x150Logo.scale-125.png" width="188" />
+        <icon height="225" platform="windows" src="www/resources/windows/icon/Square150x150Logo.scale-150.png" width="225" />
+        <icon height="300" platform="windows" src="www/resources/windows/icon/Square150x150Logo.scale-200.png" width="300" />
+        <icon height="600" platform="windows" src="www/resources/windows/icon/Square150x150Logo.scale-400.png" width="600" />
+        <splash height="300" platform="windows" src="www/resources/windows/splash/SplashScreen.scale-100.png" width="620" />
+        <splash height="375" platform="windows" src="www/resources/windows/splash/SplashScreen.scale-125.png" width="775" />
+        <splash height="450" platform="windows" src="www/resources/windows/splash/SplashScreen.scale-150.png" width="930" />
+        <splash height="600" platform="windows" src="www/resources/windows/splash/SplashScreen.scale-200.png" width="1240" />
+        <splash height="1200" platform="windows" src="www/resources/windows/splash/SplashScreen.scale-400.png" width="2480" />
+        <splash height="150" platform="windows" src="www/resources/windows/splash/Wide310x150Logo.scale-100.png" width="310" />
+        <splash height="188" platform="windows" src="www/resources/windows/splash/Wide310x150Logo.scale-125.png" width="388" />
+        <splash height="225" platform="windows" src="www/resources/windows/splash/Wide310x150Logo.scale-150.png" width="465" />
+        <splash height="300" platform="windows" src="www/resources/windows/splash/Wide310x150Logo.scale-200.png" width="620" />
+        <splash height="600" platform="windows" src="www/resources/windows/splash/Wide310x150Logo.scale-400.png" width="1240" />
+    </platform>
+    <platform name="browser">
+        <preference name="SplashScreen" value="resources/icon.png" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="SplashScreenBackgroundColor" value="#fff" />
+        <preference name="ShowSplashScreen" value="false" />
+        <preference name="SplashScreenWidth" value="96" />
+        <preference name="SplashScreenHeight" value="96" />
+    </platform> 
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+</widget>

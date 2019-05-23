@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <!-- title -->
+        <title>Greater Anglia | Home</title>
+
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+        <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+        <!-- Good default declaration:
+        * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+        * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+        * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+            * Enable inline JS: add 'unsafe-inline' to default-src
+            * Enable eval(): add 'unsafe-eval' to default-src
+        * Create your own at http://cspisawesome.com
+        -->
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#da1a35">
+        <link rel="shortcut icon" href="/favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+		
+        <!-- Get Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto%7CHelvetica+Neue" rel="stylesheet">
+		
+        <!-- Get CSS -->
+        <link href="assets/styles/normalize.min.css" rel="stylesheet" type="text/css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/materialize.min.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/master.css" />
+        <link rel="stylesheet" type="text/css" href="assets/styles/index.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav> 
+                <div class="container">
+                    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Greater Anglia"> 
+                    </div>
+                </div>
+            </nav>
+
+            <ul id="slide-out" class="sidenav">
+                <li><a class="subheader">Menu</a></li>
+                <li><div class="divider"></div></li>
+                <li><a class="waves-effect" href="index.html"><i class="material-icons">home</i>Home</a></li>
+                <li><a class="waves-effect" href="feed.html"><i class="material-icons">dashboard</i>Feed</a></li>
+                <li><a class="waves-effect" href="report.html"><i class="material-icons">add</i>Report a Fault</a></li>
+
+                <a class="modal-trigger mode-selector" href="#!"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0 0 5.373 0 12zm2 0C2 6.486 6.486 2 12 2v20C6.486 22 2 17.514 2 12z"/></svg></a>
+                <a class="modal-trigger language-selector" href="#language-selector"><img src="assets/images/united-kingdom.svg" alt="United Kingdom"></a>
+            </ul>
+
+            <div id="language-selector" class="modal">
+                <div class="modal-content modal-title">
+                    <span class="title">Language Selector</span>
+                </div>
+                <form action="#!">
+                    <ul class="collection">
+                        <a href="#!" class="collection-item active">
+                            <img src="assets/images/united-kingdom.svg" alt="United Kingdom">
+                            <span>United Kingdom</span>
+                        </a>
+                        <a href="#!" class="collection-item">
+                            <img src="assets/images/germany.svg" alt="Deutsch">
+                            <span>Deutsch</span>
+                        </a>
+                        <a href="#!" class="collection-item">
+                            <img src="assets/images/france.svg" alt="François">
+                            <span>François</span>
+                        </a>
+                        <a href="#!" class="collection-item">
+                            <img src="assets/images/spain.svg" alt="Español">
+                            <span>Español</span>
+                        </a>
+                        <a href="#!" class="collection-item">
+                            <img src="assets/images/portugal.svg" alt="Portugués">
+                            <span>Portugués</span>
+                        </a>
+                        <a href="#!" class="collection-item">
+                            <img src="assets/images/italy.svg" alt="Itália">
+                            <span>Itália</span>
+                        </a>
+                    </ul>
+                    <button class="modal-close waves-effect btn" type="submit" name="action">Select Language</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div class="container padding-small index">
+                <div class="button-container button-index">
+                    <a class="waves-effect waves-light btn" href="feed.html"><i class="material-icons left">dashboard</i>Feed</a>
+                    <a class="waves-effect waves-light btn" href="report.html"><i class="material-icons right">add</i>Report a Fault</a>
+                    <!-- <button class="btn waves-effect waves-light" type="submit" onclick="dropDb()" name="action">Drop Database</button> -->
+                </div>
+
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Latest Updates</span>
+                            <ul class="badge-updates">
+                            <li>
+                                <span class="new2 badge red" data-badge-caption="New"></span>
+                                <span class="message">Toilet Fault</span>
+                                <span class="time">14 minutes ago</span>
+                            </li>
+                            <li>
+                                <span class="new2 badge red" data-badge-caption="New"></span>
+                                <span class="message">Seat Fault</span>
+                                <span class="time">30 minutes ago</span>
+                            </li>
+                            <li>
+                                <span class="new2 badge green" data-badge-caption="Resolved"></span>
+                                <span class="message">Spillage on seat</span>
+                                <span class="time">50 minutes ago</span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m12 l4">
+                    <div class="map-card">
+                        <div class="card">
+                            <div class="card-content">    
+                                <div class="card-title card-title-padding">Contact Us</div>
+                                <p>If you're having problems with our fault reporting system, please contact our support team below.</p>
+                                <p class="icon-align"><i class="material-icons red-text">perm_phone_msg</i><span>0800 028 2878 (Monday to Sunday 08:00 - 20:00)</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Get Scripts -->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="assets/scripts/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/scripts/master.js"></script>
+        <script type="text/javascript" src="assets/scripts/database.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+
+                // Model
+                $('#language-selector').modal();
+            });
+       </script>
+    </body>
+</html>
