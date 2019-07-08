@@ -8,7 +8,7 @@ To run the app, download the repository, then install [PhoneGap](http://docs.pho
 * [PhoneGap](http://phonegap.com/) - Web and app development framework.
 * [Materalize](https://materializecss.com/) - Front-end material design framework.
 
-Additionally used HTML, CSS, JavaScript and WebSQL
+Additionally used HTML, CSS, JavaScript, [JQuery](https://jquery.com/) and WebSQL.
 
 ## Author
 App built by **Paulo Jorge**.
