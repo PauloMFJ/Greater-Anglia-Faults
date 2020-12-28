@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+  <!-- title -->
+  <title>Greater Anglia | Home</title>
+
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <!-- Favicon -->
+  <link href="assets/favicons/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180" />
+  <link href="assets/favicons/assets/favicons-32x32.png"
+        rel="icon"
+        sizes="32x32"
+        type="image/png" />
+  <link href="assets/favicons/assets/favicons-16x16.png"
+        rel="icon"
+        sizes="16x16"
+        type="image/png" />
+  <link href="assets/favicons/site.webmanifest" rel="manifest" />
+  <link color="#da1a35"
+        href="assets/favicons/safari-pinned-tab.svg"
+        rel="mask-icon" />
+  <link href="assets/favicons/assets/favicons.ico" rel="shortcut icon" />
+  <meta content="#ffffff" name="msapplication-TileColor" />
+  <meta content="assets/favicons/browserconfig.xml"
+        name="msapplication-config" />
+  <meta content="#ffffff" name="theme-color" />
+
+  <!-- Get Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CHelvetica+Neue"
+        rel="stylesheet" />
+
+  <!-- Get CSS -->
+  <link href="assets/styles/normalize.min.css"
+        media="screen"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/materialize.min.css"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/master.css" rel="stylesheet" type="text/css" />
+  <link href="assets/styles/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <a class="sidenav-trigger" data-target="slide-out" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <div class="logo">
+          <img alt="Greater Anglia" src="assets/images/logo.png" />
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="slide-out">
+      <li>
+        <a class="subheader">Menu</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="waves-effect" href="index.html">
+          <i class="material-icons">home</i>Home
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="feed.html">
+          <i class="material-icons">dashboard</i>Feed
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="report.html">
+          <i class="material-icons">add</i>Report a Fault
+        </a>
+      </li>
+
+      <a class="modal-trigger mode-selector" href="#!">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0 0 5.373 0 12zm2 0C2 6.486 6.486 2 12 2v20C6.486 22 2 17.514 2 12z" />
+          
+        </svg>
+      </a>
+      <a class="modal-trigger language-selector" href="#language-selector">
+        <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+      </a>
+    </ul>
+
+    <div class="modal" id="language-selector">
+      <div class="modal-content modal-title">
+        <span class="title">Language Selector</span>
+      </div>
+      <form action="#!">
+        <ul class="collection">
+          <a class="collection-item active" href="#!">
+            <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+            <span>United Kingdom</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Deutsch" src="assets/images/germany.svg" />
+            <span>Deutsch</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="François" src="assets/images/france.svg" />
+            <span>François</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Español" src="assets/images/spain.svg" />
+            <span>Español</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Portugués" src="assets/images/portugal.svg" />
+            <span>Portugués</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Itália" src="assets/images/italy.svg" />
+            <span>Itália</span>
+          </a>
+        </ul>
+        <button class="modal-close waves-effect btn"
+                name="action"
+                type="submit">
+          Select Language
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="container padding-small index">
+      <div class="button-container button-index">
+        <a class="waves-effect waves-light btn" href="feed.html">
+          <i class="material-icons left">dashboard</i>Feed
+        </a>
+        <a class="waves-effect waves-light btn" href="report.html">
+          <i class="material-icons right">add</i>Report a Fault
+        </a>
+        <!-- <button class="btn waves-effect waves-light" type="submit" onclick="dropDb()" name="action">Drop Database</button> -->
+      </div>
+
+      <div class="col s12">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title">Latest Updates</span>
+            <ul class="badge-updates">
+              <li>
+                <span class="new2 badge red" data-badge-caption="New"></span>
+                <span class="message">Toilet Fault</span>
+                <span class="time">14 minutes ago</span>
+              </li>
+              <li>
+                <span class="new2 badge red" data-badge-caption="New"></span>
+                <span class="message">Seat Fault</span>
+                <span class="time">30 minutes ago</span>
+              </li>
+              <li>
+                <span class="new2 badge green" data-badge-caption="Resolved">
+                </span>
+                <span class="message">Spillage on seat</span>
+                <span class="time">50 minutes ago</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l4">
+        <div class="map-card">
+          <div class="card">
+            <div class="card-content">
+              <div class="card-title card-title-padding">Contact Us</div>
+              <p>
+                If you're having problems with our fault reporting system, please contact our support team below.
+              </p>
+              <p class="icon-align">
+                <i class="material-icons red-text">perm_phone_msg</i>
+                <span>0800 028 2878 (Monday to Sunday 08:00 - 20:00)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Get Scripts -->
+  <script src="cordova.js" type="text/javascript"></script>
+  <script src="assets/scripts/jquery-3.3.1.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/materialize.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/master.js" type="text/javascript"></script>
+  <script src="assets/scripts/database.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+
+      // Model
+      $('#language-selector').modal();
+    });
+  </script>
+</body>
+</html>

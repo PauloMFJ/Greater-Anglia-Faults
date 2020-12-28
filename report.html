@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+  <!-- title -->
+  <title>Greater Anglia | Report a Fault</title>
+
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <!-- Favicon -->
+  <link href="assets/favicons/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180" />
+  <link href="assets/faviconsassets/favicons-32x32.png"
+        rel="icon"
+        sizes="32x32"
+        type="image/png" />
+  <link href="assets/faviconsassets/favicons-16x16.png"
+        rel="icon"
+        sizes="16x16"
+        type="image/png" />
+  <link href="assets/favicons/site.webmanifest" rel="manifest" />
+  <link color="#da1a35"
+        href="assets/favicons/safari-pinned-tab.svg"
+        rel="mask-icon" />
+  <link href="assets/faviconsassets/favicons.ico" rel="shortcut icon" />
+  <meta content="#ffffff" name="msapplication-TileColor" />
+  <meta content="assets/favicons/browserconfig.xml"
+        name="msapplication-config" />
+  <meta content="#ffffff" name="theme-color" />
+
+  <!-- Get Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CHelvetica+Neue"
+        rel="stylesheet" />
+
+  <!-- Get CSS -->
+  <link href="assets/styles/normalize.min.css"
+        media="screen"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/materialize.min.css"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/master.css" rel="stylesheet" type="text/css" />
+  <link href="assets/styles/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav class="invert">
+      <div class="container">
+        <a class="sidenav-trigger" data-target="slide-out" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <div class="title">
+          <div>Report a Fault</div>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="slide-out">
+      <li>
+        <a class="subheader">Menu</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="waves-effect" href="index.html">
+          <i class="material-icons">home</i>Home
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="feed.html">
+          <i class="material-icons">dashboard</i>Feed
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="report.html">
+          <i class="material-icons">add</i>Report a Fault
+        </a>
+      </li>
+
+      <a class="modal-trigger mode-selector" href="#!">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0 0 5.373 0 12zm2 0C2 6.486 6.486 2 12 2v20C6.486 22 2 17.514 2 12z" />
+          
+        </svg>
+      </a>
+      <a class="modal-trigger language-selector" href="#language-selector">
+        <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+      </a>
+    </ul>
+
+    <div class="modal" id="language-selector">
+      <div class="modal-content modal-title">
+        <span class="title">Language Selector</span>
+      </div>
+      <form action="#!">
+        <ul class="collection">
+          <a class="collection-item active" href="#!">
+            <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+            <span>United Kingdom</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Deutsch" src="assets/images/germany.svg" />
+            <span>Deutsch</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="François" src="assets/images/france.svg" />
+            <span>François</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Español" src="assets/images/spain.svg" />
+            <span>Español</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Portugués" src="assets/images/portugal.svg" />
+            <span>Portugués</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Itália" src="assets/images/italy.svg" />
+            <span>Itália</span>
+          </a>
+        </ul>
+        <button class="modal-close waves-effect btn"
+                name="action"
+                type="submit">
+          Select Language
+        </button>
+      </form>
+    </div>
+
+    <div class="modal" id="modal-submitted">
+      <div class="modal-content">
+        <span class="title">Report Submitted!</span>
+        <p>
+          Thank you for submitting a fault! You can sit back and relax now, we will try and get the issue resolved as soon as possible!
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="modal-close waves-effect waves-red btn-flat"
+           href="index.html">
+          Return Home
+        </a>
+        <a class="modal-close waves-effect waves-red btn-flat" href="#!">
+          Report Another Fault
+        </a>
+      </div>
+    </div>
+
+    <div class="modal" id="modal-warning">
+      <div class="modal-content">
+        <span class="title">Warning</span>
+        <p>
+          Are you sure you want to exit and lose you report? If you leave now, your changes will be lost and the report won't be posted.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="modal-close waves-effect waves-red btn-flat" href="#!">
+          Cancel
+        </a>
+        <a class="modal-close waves-effect waves-red btn-flat" href="#!">
+          Continue
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container padding-small">
+      <div class="row">
+        <form class="col s12"
+              data-ajax="false"
+              id="report-form"
+              onsubmit="return reportFault()">
+          <div class="row">
+            <div class="input-field col s11">
+              <input class="validate"
+                     data-length="6"
+                     id="staff-id"
+                     type="number" />
+              <label for="staff-id">Staff ID</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Barcode number found on Greater Anglia ID card.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s3">
+              <input class="validate"
+                     data-length="5"
+                     id="train-no"
+                     type="number" />
+              <label for="train-no">Train No.</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Train number found on the front of the train.">
+                help
+              </i>
+            </div>
+            <div class="input-field col s3">
+              <input class="validate"
+                     data-length="5"
+                     id="coach-no"
+                     type="text" />
+              <label for="coach-no">Coach No.</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Coach number fault occured in as found at entrance to coach.">
+                help
+              </i>
+            </div>
+            <div class="input-field col s3">
+              <input class="validate"
+                     data-length="3"
+                     id="seat-no"
+                     type="number" />
+              <label for="seat-no">Seat No.</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="If fault was seat related, the seat number of fault as found on the seat or above window.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s5">
+              <input class="validate" id="from-location" type="text" />
+              <label for="from-location">Departure Location</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Departure location you were/are travelling from.">
+                help
+              </i>
+            </div>
+            <div class="input-field col s5">
+              <input class="validate" id="to-location" type="text" />
+              <label for="to-location">Destination Location</label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Destination location you were/are travelling to.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s5">
+              <input class="datepicker validate"
+                     id="fault-date"
+                     required
+                     type="text" />
+              <label for="fault-date">Date of Fault</label>
+              <span class="helper-text"
+                    data-error="Date Invalid"
+                    data-success="Required*">
+                Required*
+              </span>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Date fault occured or was found.">
+                help
+              </i>
+            </div>
+            <div class="input-field col s5">
+              <input class="timepicker validate"
+                     id="fault-time"
+                     required
+                     type="text" />
+              <label for="fault-time">Time of Fault</label>
+              <span class="helper-text" data-success="Required*">
+                Required*
+              </span>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Time fault occured or was found.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="row">
+                <div class="input-field col s11">
+                  <i class="material-icons prefix">search</i>
+                  <input class="autocomplete validate"
+                         data-length="32"
+                         id="fault-type"
+                         required
+                         type="text" />
+                  <label for="fault-type">Fault Type</label>
+                  <span class="helper-text" data-success="Required*">
+                    Required*
+                  </span>
+                </div>
+                <div class="input-field col s1 tool-tip-container">
+                  <i class="material-icons tool-tip"
+                     data-position="bottom"
+                     data-tooltip="Fault type to found.">
+                    help
+                  </i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s11">
+              <textarea class="materialize-textarea validate"
+                        data-length="256"
+                        id="fault-desc"
+                        required>
+              </textarea>
+              <label for="fault-desc">Fault Description</label>
+              <span class="helper-text" data-success="Required*">
+                Required*
+              </span>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Description of fault found.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-image col s11">
+              <input accept="image/*" id="fault-photo" type="file" />
+              <label class="transition-2s" for="fault-photo" id="fileDrag">
+                <span>Upload Fault Photo...</span>
+              </label>
+            </div>
+            <div class="input-field col s1 tool-tip-container">
+              <i class="material-icons tool-tip"
+                 data-position="bottom"
+                 data-tooltip="Photo of fault found.">
+                help
+              </i>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn waves-effect waves-light"
+                    name="action"
+                    type="submit">
+              Submit Fault
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Get Scripts -->
+  <script src="cordova.js" type="text/javascript"></script>
+  <script src="assets/scripts/jquery-3.3.1.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/materialize.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/file.js" type="text/javascript"></script>
+  <script src="assets/scripts/database.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('.sidenav').sidenav();  
+
+      // Models
+      $('#modal-submitted').modal(); 
+      $('#language-selector').modal();
+
+      // Auto Complete
+      $('input.autocomplete').autocomplete({
+        data: {
+          "Seat Fault": null,
+          "Toilet Fault": null,
+          "Information": null,
+          "Safety & Security": null,
+          "Maintenance": null,
+          "Cleanliness": null,
+          "Dirty": null,
+          "Rubbish": null,
+          "Presentation": null
+        },
+      });
+
+      // Character Counters
+      $('input#staff-id, input#train-no, input#coach-no, input#seat-no, input#fault-type, textarea#fault-desc').characterCounter();
+
+      // Tooltips
+      $('.tool-tip').tooltip();
+
+      document.getElementById('fault-photo').onclick = function() {
+        navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
+          destinationType: Camera.DestinationType.DATA_URL
+        });
+      };
+    });
+
+    function onSuccess(data){
+      var image = document.getElementById("fileDrag");
+      image.src = "data:image/jpeg;base64," + data;
+      base64imageData = data;
+    }
+
+    function onFail(message) {
+      console.log('Photo Upload Failed: ' + message);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Timepicker
+      var timepicker = document.querySelectorAll('.timepicker');
+      M.Timepicker.init(timepicker, {
+          defaultTime: 'now',
+          vibrate: false
+      });
+
+      // Datepicker
+      var datepicker  = document.querySelectorAll('.datepicker');
+      var today = new Date();
+      var date = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      M.Datepicker.init(datepicker , {
+        defaultDate: date,
+        setDefaultDate: true
+      }).setDate(date);
+    });
+
+    // window.onload = function() {
+    //     window.addEventListener("beforeunload", function (e) {
+    //         if (submitted)
+    //             return undefined;
+
+    //         $('#modal-warning').modal('open'); 
+
+    //         var confirmationMessage = 'It looks like you have been editing something. '
+    //                                 + 'If you leave before saving, your changes will be lost.';
+
+    //         (e || window.event).returnValue = confirmationMessage; //Gecko + IE
+    //         return confirmationMessage; //Gecko + Webkit, Safari, Chrome etc.
+    //     });
+    // };
+
+    // window.onload = function() {
+    //     var today = new Date();
+    //     $('.timepicker').val(today.toLocaleString('en-GB', { hour: 'numeric', minute: 'numeric', hour12: true, minimumIntegerDigits: 4, minimumFractionDigits: 2, useGrouping: false }));
+    // };      
+  </script>
+</body>
+</html>

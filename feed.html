@@ -1,0 +1,373 @@
+<!doctype html>
+<html>
+<head>
+  <!-- title -->
+  <title>Greater Anglia | Feed</title>
+
+  <!-- Metadata -->
+  <meta charset="utf-8" />
+  <meta content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"
+        name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+
+  <!-- Favicon -->
+  <link href="assets/favicons/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180" />
+  <link href="assets/faviconsassets/favicons-32x32.png"
+        rel="icon"
+        sizes="32x32"
+        type="image/png" />
+  <link href="assets/faviconsassets/favicons-16x16.png"
+        rel="icon"
+        sizes="16x16"
+        type="image/png" />
+  <link href="assets/favicons/site.webmanifest" rel="manifest" />
+  <link color="#da1a35"
+        href="assets/favicons/safari-pinned-tab.svg"
+        rel="mask-icon" />
+  <link href="assets/faviconsassets/favicons.ico" rel="shortcut icon" />
+  <meta content="#ffffff" name="msapplication-TileColor" />
+  <meta content="assets/favicons/browserconfig.xml"
+        name="msapplication-config" />
+  <meta content="#ffffff" name="theme-color" />
+
+  <!-- Get Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto%7CHelvetica+Neue"
+        rel="stylesheet" />
+
+  <!-- Get CSS -->
+  <link href="assets/styles/normalize.min.css"
+        media="screen"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/materialize.min.css"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="assets/styles/master.css" rel="stylesheet" type="text/css" />
+  <link href="assets/styles/index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="layout-dark">
+  <header>
+    <nav>
+      <div class="container">
+        <a class="sidenav-trigger" data-target="slide-out" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <div class="title">
+          <div>
+            <span>Feed</span>
+            <a class="modal-trigger" href="#feed">
+              <i class="material-icons right">more_vert</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal" id="feed">
+      <div class="modal-content modal-title">
+        <span class="title">Filter Feed</span>
+      </div>
+      <form action="#!">
+        <ul class="collection">
+          <label class="collection-item new">
+            <i class="material-icons">access_time</i>
+            <span>New</span>
+            <input checked="checked" class="filled-in" type="checkbox" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item scheduled">
+            <i class="material-icons">assignment</i>
+            <span>Scheduled</span>
+            <input checked="checked" class="filled-in" type="checkbox" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item resolved">
+            <i class="material-icons">done</i>
+            <span>Resolved</span>
+            <input checked="checked" class="filled-in" type="checkbox" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item">
+            <i class="material-icons">trending_up</i>
+            <span>Sort by Most Recent</span>
+            <input checked name="filter" type="radio" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item">
+            <i class="material-icons">trending_down</i>
+            <span>Sort by Least Recent</span>
+            <input name="filter" type="radio" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item">
+            <i class="material-icons">thumb_up</i>
+            <span>Sort by Most Supported</span>
+            <input name="filter" type="radio" />
+            <span class="right"></span>
+          </label>
+          <label class="collection-item">
+            <i class="material-icons">thumb_down</i>
+            <span>Sort by Least Supported</span>
+            <input name="filter" type="radio" />
+            <span class="right"></span>
+          </label>
+        </ul>
+        <button class="modal-close waves-effect btn"
+                name="action"
+                type="submit">
+          Filter
+        </button>
+      </form>
+    </div>
+
+    <ul class="sidenav" id="slide-out">
+      <li>
+        <a class="subheader">Menu</a>
+      </li>
+      <li>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a class="waves-effect" href="index.html">
+          <i class="material-icons">home</i>Home
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="feed.html">
+          <i class="material-icons">dashboard</i>Feed
+        </a>
+      </li>
+      <li>
+        <a class="waves-effect" href="report.html">
+          <i class="material-icons">add</i>Report a Fault
+        </a>
+      </li>
+
+      <a class="modal-trigger mode-selector" href="#!">
+        <svg height="24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12S18.627 0 12 0 0 5.373 0 12zm2 0C2 6.486 6.486 2 12 2v20C6.486 22 2 17.514 2 12z" />
+          
+        </svg>
+      </a>
+      <a class="modal-trigger language-selector" href="#language-selector">
+        <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+      </a>
+    </ul>
+
+    <div class="modal" id="language-selector">
+      <div class="modal-content modal-title">
+        <span class="title">Language Selector</span>
+      </div>
+      <form action="#!">
+        <ul class="collection">
+          <a class="collection-item active" href="#!">
+            <img alt="United Kingdom" src="assets/images/united-kingdom.svg" />
+            <span>United Kingdom</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Deutsch" src="assets/images/germany.svg" />
+            <span>Deutsch</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="François" src="assets/images/france.svg" />
+            <span>François</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Español" src="assets/images/spain.svg" />
+            <span>Español</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Portugués" src="assets/images/portugal.svg" />
+            <span>Portugués</span>
+          </a>
+          <a class="collection-item" href="#!">
+            <img alt="Itália" src="assets/images/italy.svg" />
+            <span>Itália</span>
+          </a>
+        </ul>
+        <button class="modal-close waves-effect btn"
+                name="action"
+                type="submit">
+          Select Language
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="container padding-small">
+      <div class="row" id="reports">
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <div>
+                <img class="materialboxed" src="assets/images/seat.jpg" />
+              </div>
+              <a class="switch support btn-floating halfway-fab red">
+                <i class="material-icons">plus_one</i>
+                <div>Support</div>
+              </a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Seat Fault</span>
+              <span class="card-date">Dec 12, 2018 at 02:51 PM</span>
+              <p>The seats are completely broken.</p>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Staff ID.">
+                <i class="material-icons">person</i>105214
+              </div>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Train Number.">
+                <i class="material-icons">train</i>10214
+              </div>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Coach Number.">
+                <i class="material-icons">people</i>B4
+              </div>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Seat Number.">
+                <i class="material-icons">event_seat</i>102
+              </div>
+              <div class="chip new tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Recently added and not yet assigned.">
+                <i class="material-icons">access_time</i>New
+              </div>
+              <div class="chip supporters tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Number of people who have supported the fault to be resolved.">
+                <i class="material-icons">thumb_up</i>0 Supporters
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card">
+            <div class="card-image">
+              <div>
+                <img class="materialboxed" src="assets/images/toliet.jpg" />
+              </div>
+              <a class="switch support btn-floating halfway-fab red">
+                <i class="material-icons">exposure_neg_1</i>
+                <div>Unsupport</div>
+              </a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Toliet Fault</span>
+              <span class="card-date">Dec 12, 2018 at 02:51 PM</span>
+              <p>
+                The toliet wouldn't flush and the sinks water pressure was very low. Which meant washing my hands was a nightmare!
+              </p>
+              <div class="chip scheduled tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Scheduled to be resolved.">
+                <i class="material-icons">assignment</i>Scheduled
+              </div>
+              <div class="chip supporters tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Number of people who have supported the fault to be resolved.">
+                <i class="material-icons">thumb_up</i>0 Supporters
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="card image-none">
+            <div class="card-image">
+              <a class="switch support btn-floating halfway-fab red">
+                <i class="material-icons">exposure_neg_1</i>
+                <div>Unsupport</div>
+              </a>
+            </div>
+            <div class="card-content">
+              <span class="card-title">Information</span>
+              <span class="card-date">Dec 12, 2018 at 02:51 PM</span>
+              <p>Unsure where to find something.</p>
+              <div class="chip resolved tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Issue has been resolved.">
+                <i class="material-icons">done</i>Resolved
+              </div>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Departure Location.">
+                <i class="material-icons">location_on</i>Norwich
+              </div>
+              <div class="chip tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Destination Location.">
+                <i class="material-icons">navigation</i>London
+              </div>
+              <div class="chip supporters tool-tip"
+                   data-position="bottom"
+                   data-tooltip="Number of people who have supported the fault to be resolved.">
+                <i class="material-icons">thumb_up</i>0 Supporters
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  <div class="button-container">
+                    <button class="btn waves-effect waves-light" type="submit" onclick="dropDb()" name="action">Drop Database</button>
+      </div>-->
+    </div>
+  </main>
+
+  <!-- Get Scripts -->
+  <script src="cordova.js" type="text/javascript"></script>
+  <script src="assets/scripts/jquery-3.3.1.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/materialize.min.js" type="text/javascript">
+  </script>
+  <script src="assets/scripts/master.js" type="text/javascript"></script>
+  <script src="assets/scripts/database.js" type="text/javascript"></script>
+  <script src="assets/scripts/pulltorefresh.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+
+      // Continue On DB Load
+      $(document).on('db_loaded', db_loaded);
+    });
+
+    function db_loaded() {
+      // Tooltips
+      $('.tool-tip').tooltip();
+
+      // Material Boxed
+      $('.materialboxed').materialbox();
+
+      // Models
+      $('#feed').modal();
+      $('#language-selector').modal();
+
+      // Toggle Support
+      $.fn.toggleText = function(a, b){
+        return (this.text() === a ? this.text(b) : this.text(a));
+      };
+      $('.switch').click(function(){
+        $(this).find('i').toggleText('plus_one', 'exposure_neg_1');
+        $(this).find('div').toggleText('Support', 'Unsupport');
+      })
+
+      // Pull to Refresh
+      PullToRefresh.init({
+        mainElement: 'main',
+        onRefresh: function(){
+          window.location.reload(); 
+        }
+      });
+    }
+  </script>
+</body>
+</html>
